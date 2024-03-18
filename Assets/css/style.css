@@ -12,9 +12,15 @@ header nav{
     text-align: right;
 }
 section{
-    display:flex;
+    /*display:flex;
     justify-content: center;
+    flex-wrap: wrap; */
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 960px%;
+    width: 960px;
+}
+
+.hide{
+    display: none;
 }
