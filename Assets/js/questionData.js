@@ -1,7 +1,7 @@
 var questionData = [
     { //make sure to add real questions
         title:"Who sang the title song for the latest Bond film, No Time to Die?",
-        choices: ["Adele","Sam Smith","Billie Eilish","David Bowi"],
+        choices: ["Adele","Sam Smith","Billie Eilish","David Bowie"],
         Solution:"Billie Eilish"
     },
     {
