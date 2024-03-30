@@ -8,7 +8,8 @@ var choiceListEl= document.getElementById("choice-list")
 var timerEl= document.getElementById("timer")
 var messageEL=document.getElementById("message")
 var scoreEl=document.getElementById("score")
-
+var goBackEL = document.getElementById("goback-btn")
+var clearScoreEL = document.getElementById("clearHighscore")
 var setIntervalId
 var timeRemaining=questionData.length * 15
 var index=0
@@ -62,14 +63,32 @@ function endQuiz(){
     clearInterval(setIntervalId)
     questionSectionEl.classList.add("hide")
     initialInputEl.classList.remove("hide")
+    highscoreEl.classList.remove("hide")
     scoreEl.textContent=timerEl.textContent
+
+    var highScore = localStorage.setItem("highscore", JSON.stringify(highScore))
+
+  
 }
-localStorage.setItem("score", "highscore");
-localStorage.getItem("score");
+
+function displayHighscore(){
+    clearInterval(setIntervalId)
+
+
+    var scoreList =localStorage.getItem("highscore");
+    if(scoreList !==null){
+        newList =JSON.parse(scoreList);
+        return newList;
+    }else{
+        newList = [];
+    }
+    return newList;
+}
+
+
+
 
 
 startQuizEl.addEventListener("click", startQuiz) //callback for click
 choiceListEl.addEventListener("click", nextQuestion) //callback function for going to next question
-highscoreEl.addEventListener("click", clearHighScore)
-
-
+clearScoreEL.addEventListener("click", clearScore)
