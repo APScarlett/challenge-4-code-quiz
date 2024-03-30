@@ -40,32 +40,36 @@ function renderQuestion(){
 function startTimer(){
     timerEl.textContent=timeRemaining--
 }
-function nextQuestion(event){
-    var currentChoiceBtn= event.target
-    var solution=questionData[index].solution
- index++
- if(index < questionData.length){
-     questionData
-    if(currentChoiceBtn.textContent ===solution){
-        messageEL.innerHTML="<h4>Correct!</h4>"
-    }else{
-        messageEL.innerHTML="<h4>Incorrect!</h4>"
-        timeRemaining=timeRemaining-10
+function nextQuestion(event) {
+    var currentChoiceBtn = event.target;
+    var solution = questionData[index].Solution; // Now correctly references the uppercase's'
+    index++;
+    if (index < questionData.length) {
+        if (currentChoiceBtn.textContent === solution) {
+            messageEL.innerHTML = "<h4>Correct!</h4>";
+        } else {
+            messageEL.innerHTML = "<h4>Incorrect!</h4>";
+            timeRemaining = timeRemaining - 10;
+        }
+        //half second delay
+        setTimeout(renderQuestion, 500);
+    } else {
+        endQuiz();
     }
-    //half second delay
-    setTimeout(renderQuestion, 500)
- renderQuestion()
-}else{
-    
-    endQuiz()
-}
 }
 
 function endQuiz(){
     clearInterval(setIntervalId)
     questionSectionEl.classList.add("hide")
-    initialInputEl.ClassList.remove("hide")
+    initialInputEl.classList.remove("hide")
     scoreEl.textContent=timerEl.textContent
 }
+localStorage.setItem("score", "highscore");
+localStorage.getItem("score");
+
+
 startQuizEl.addEventListener("click", startQuiz) //callback for click
 choiceListEl.addEventListener("click", nextQuestion) //callback function for going to next question
+highscoreEl.addEventListener("click", clearHighScore)
+
+

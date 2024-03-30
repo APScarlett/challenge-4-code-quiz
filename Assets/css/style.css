@@ -1,6 +1,19 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
 header{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+main{
+    text-align: center;
+    justify-content: center;
+    flex:auto;
+
 }
 
 header h3{
@@ -13,9 +26,7 @@ header nav{
     text-align: right;
 }
 section{
-    /*display:flex;
-    justify-content: center;
-    flex-wrap: wrap; */
+
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -25,3 +36,11 @@ section{
 .hide{
     display: none;
 }
+
+.button{
+    background:white;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }

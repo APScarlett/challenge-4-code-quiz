@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code Quiz</title>
     <link rel="stylesheet" href="./Assets/css/reset.css">
     <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
-<body>
+<body style="background-color: green;">
     <header>
-        <h3>View Highscores</h3>
+        <h3 style="color: purple;">View Highscores</h3>
         
         <nav>
             <h3>Time: <span id="timer"></span></h3>
@@ -20,25 +20,29 @@
     <main>
         <section id="intro">
             <h1>Code Quiz</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laudantium eveniet neque. Facilis sequi eius ipsa quis saepe cupiditate optio voluptate quod explicabo quos. Soluta animi pariatur molestiae laudantium eveniet!</p>
-            <button id="start-quiz">Start Quiz</button>
+            <p>Try to answer the following code-related questions within the time limit. Incorrect answers will penalize your score time by 10 seconds!</p>
+            <button  id="start-quiz">Start Quiz</button>
         </section>
 
         <section class="hide" id="question-section">
-            <h1 id="question-title">"Who sang the title song for the latest Bond film, No Time to Die?</h1>
+            <h1 id="question-title">"Commonly used data types DO NOT include:</h1>
             <ol id="choice-list">
-                <li><button> Adele </button></li>
-                <li><button> Sam Smith </button></li>
-                <li><button> Billie Eilish </button></li>
-                <li><button> David Bowie</button></li>
+                <li><button >Strings </button></li>
+                <li><button>Booleans </button></li>
+                <li><button>Alerts </button></li>
+                <li><button>Numbers </button></li>
             </ol>
             <label id="message"></label>
         </section>
 
         <section class="hide" id="intial-input">
             <h1>All Done</h1>
-            <p>Your score is <span id="score">22</span></p>
-          Enter Initial <input type="text" id="intial">
+            <p>Your score is 
+                <span id="score">22</span>
+            </p>
+            <label for="">Enter your Initial:</label>    
+            <input type="text" id="intial" maxlength="2", placeholder="AS">
+                <button id="Submit">Submit</button>
         </section>
 
         <section class="hide" id="highscore">
