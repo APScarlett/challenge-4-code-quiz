@@ -1,4 +1,6 @@
 # Challenge-4-CODE-QUIZ
+[![Image from Gyazo](https://i.gyazo.com/2f675e5110220b34900aba240de6647e.png)](https://gyazo.com/2f675e5110220b34900aba240de6647e)
+[![Image from Gyazo](https://i.gyazo.com/0b13dde7771aed8471c639e4d1ccd7be.png)](https://gyazo.com/0b13dde7771aed8471c639e4d1ccd7be)
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
