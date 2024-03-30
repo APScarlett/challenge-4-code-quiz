@@ -92,3 +92,6 @@ function displayHighscore(){
 startQuizEl.addEventListener("click", startQuiz) //callback for click
 choiceListEl.addEventListener("click", nextQuestion) //callback function for going to next question
 clearScoreEL.addEventListener("click", clearScore)
+
+
+
