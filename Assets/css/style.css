@@ -1,3 +1,8 @@
+
+/*  
+Added basic font family, border box, text aligment for header/main/section/footer 
+created button styling.
+*/
 *{
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;

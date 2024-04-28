@@ -1,3 +1,4 @@
+// Create multiple variables to use through the program
 var introEl= document.getElementById("intro")
 var questionSectionEl=document.getElementById("question-section")
 var initialInputEl= document.getElementById("intial-input")
@@ -15,7 +16,7 @@ var timeRemaining=questionData.length * 15
 var index=0
 
 function startQuiz(){
-    // <section id ="intro" class="hide"> the code below represents the same thign as this line 
+    // <section id ="intro" class="hide"> the code below represents the same thing as this line 
     introEl.classList.add("hide")
     questionSectionEl.classList.remove("hide")
 
@@ -38,12 +39,14 @@ function renderQuestion(){
         choiceListEl.appendChild(li)
         }
 }
+//function starts the clock timer in the top corner
 function startTimer(){
     timerEl.textContent=timeRemaining--
 }
-function nextQuestion(event) {
+// function to move to the next question
+function nextQuestion(event) { 
     var currentChoiceBtn = event.target;
-    var solution = questionData[index].Solution; // Now correctly references the uppercase's'
+    var solution = questionData[index].Solution; 
     index++;
     if (index < questionData.length) {
         if (currentChoiceBtn.textContent === solution) {
@@ -70,7 +73,7 @@ function endQuiz(){
 
   
 }
-
+//function to display highscore 
 function displayHighscore(){
     clearInterval(setIntervalId)
 
