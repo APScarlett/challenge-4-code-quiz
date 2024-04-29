@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 <!-- Added multiple Ids, added background color, -->
-<body style="background-color: green;">
+<body style="background-color: rgb(196, 149, 188);">
     <header>
         <h3 style="color: purple;">View Highscores</h3>
         
         <nav>
-            <h3>Time: <span id="timer"></span></h3>
+            <h3>Time: <span id="timer">60s</span></h3>
         </nav>
         
     </header>
@@ -24,30 +24,34 @@
             <p>Try to answer the following code-related questions within the time limit. Incorrect answers will penalize your score time by 10 seconds!</p>
             <button  id="start-quiz">Start Quiz</button>
         </section>
+       
+      
 
-        <section class="hide" id="question-section">
+        <section id="question-section" class="hide">
             <h1 id="question-title">"Commonly used data types DO NOT include:</h1>
+            
             <ol id="choice-list">
-                <li><button >Strings </button></li>
-                <li><button>Booleans </button></li>
-                <li><button>Alerts </button></li>
-                <li><button>Numbers </button></li>
+                <li><button>Strings</button></li>
+                <li><button>Booleans</button></li>
+                <li><button>Alerts</button></li>
+                <li><button>Numbers</button></li>
             </ol>
             <label id="message"></label>
         </section>
 
-        <section class="hide" id="intial-input">
+        <section id="intial" class="hide">
             <h1>All Done</h1>
             <p>Your score is 
                 <span id="score">22</span>
             </p>
+            
             <label for="">Enter your Initial:</label>    
-            <input type="text" id="intial" maxlength="2", placeholder="AS">
+            <input type="text" id="intial-input" maxlength="2", placeholder="AS">
                 <button id="Submit">Submit</button>
         </section>
 
-        <section class="hide" id="highscore">
-            <ol>
+        <section id="highscore" class="hide">
+            <ol id ="highScoreList">
                 <li></li>
                 <li></li>
                 <li></li>
