@@ -1,8 +1,8 @@
 # Challenge-4-CODE-QUIZ
 
 https://apscarlett.github.io/challenge-4-code-quiz/
-[![Image from Gyazo](https://i.gyazo.com/2f675e5110220b34900aba240de6647e.png)](https://gyazo.com/2f675e5110220b34900aba240de6647e)
-[![Image from Gyazo](https://i.gyazo.com/0b13dde7771aed8471c639e4d1ccd7be.png)](https://gyazo.com/0b13dde7771aed8471c639e4d1ccd7be)
+[![Image from Gyazo](https://i.gyazo.com/a849bdc7d198891d6e27dcda9c9f3076.png)](https://gyazo.com/a849bdc7d198891d6e27dcda9c9f3076)
+[![Image from Gyazo](https://i.gyazo.com/319200675e1b3824f18f25eac910cc7d.png)](https://gyazo.com/319200675e1b3824f18f25eac910cc7d)
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
